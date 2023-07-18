@@ -4,7 +4,6 @@ import {
   Area,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   ResponsiveContainer,
 } from 'recharts';
@@ -61,8 +60,6 @@ const BigChartBox = () => {
       <div className='chart'>
         <ResponsiveContainer width='99%' height='100%'>
           <AreaChart
-            width={500}
-            height={400}
             data={data}
             margin={{
               top: 10,
@@ -71,7 +68,6 @@ const BigChartBox = () => {
               bottom: 0,
             }}
           >
-            <CartesianGrid strokeDasharray='3 3' />
             <XAxis dataKey='name' />
             <YAxis />
             <Tooltip />
