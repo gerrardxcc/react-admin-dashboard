@@ -1,6 +1,6 @@
-import './chartBox.scss';
 import { Link } from 'react-router-dom';
-import { LineChart, Line, ResponsiveContainer, Tooltip } from 'recharts';
+import './chartBox.scss';
+import { Line, LineChart, ResponsiveContainer, Tooltip } from 'recharts';
 
 type Props = {
   color: string;
@@ -17,7 +17,7 @@ const ChartBox = (props: Props) => {
     <div className='chartBox'>
       <div className='boxInfo'>
         <div className='title'>
-          <img src={props.icon} alt='user' />
+          <img src={props.icon} alt='' />
           <span>{props.title}</span>
         </div>
         <h1>{props.number}</h1>
@@ -32,7 +32,7 @@ const ChartBox = (props: Props) => {
               <Tooltip
                 contentStyle={{ background: 'transparent', border: 'none' }}
                 labelStyle={{ display: 'none' }}
-                position={{ x: 10, y: 60 }}
+                position={{ x: 10, y: 70 }}
               />
               <Line
                 type='monotone'
@@ -57,4 +57,5 @@ const ChartBox = (props: Props) => {
     </div>
   );
 };
+
 export default ChartBox;

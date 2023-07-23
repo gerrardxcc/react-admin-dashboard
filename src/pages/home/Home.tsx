@@ -13,7 +13,7 @@ import {
 } from '../../data';
 import './home.scss';
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className='home'>
       <div className='box box1'>
@@ -46,3 +46,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;
